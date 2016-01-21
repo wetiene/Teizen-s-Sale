@@ -14,7 +14,7 @@
 .section,
 .title-section {
   font-family: 'Open Sans', sans-serif;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -31,21 +31,21 @@
 }
 
 .section-title {
-  font-weight: 800;
+  font-weight: 200;
 }
 
 .title-section .section-title {
-  font-size: 12vh;
+  font-size: 7vh;
   text-transform: uppercase;
 }
 
 .section .section-title {
-  font-size: 7vh;
+  font-size: 3vh;
 }
 
 .section-subtitle {
-  font-size: 3vh;
-  font-weight: 400;
+  font-size: 2vh;
+  font-weight: 50;
 }
 
 .navbar-default {

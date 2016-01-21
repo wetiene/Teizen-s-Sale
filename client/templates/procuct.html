@@ -1,11 +1,27 @@
 <!--products.html-->
 <template name="product">
   <div id="{{id}}" class="section {{#if hasBackgroundImage}}overlay{{/if}}"
-    style="{{background}}">
+    style="{{background}}; z-index:1;">
     <div class="ribbon"><span>Vendido</span></div>
     <div class="container">
-      <h2 class="section-title">{{category}}</h2>
-      <p class="section-subtitle">{{price}}</p>
+      <h2 class="section-title">Categoria: {{category}}</h2>
+      <p class="section-subtitle">Id: {{id}}</p>
+      <p class="section-subtitle">Nome: {{name}}</p>
+      <p class="section-subtitle">Descrição: {{description}}</p>
+      <p class="section-subtitle">Ordem: {{order}}</p>
+      <p class="section-subtitle">Link Externo: <a href="{{external_link}}">{{external_link}} </a> </p>
+	  <p class="section-subtitle">Badge Vendido (boolean): {{badge_sold}}</p>
+	  <p class="section-subtitle">Badge Desconto (boolean): {{badge_sale}}</p>
+      <p class="section-subtitle">Preço: {{price}}</p>
+      <div class="container">
+	      {{#each images}}
+	        {{> image}}
+	      {{/each}}
+      </div>
     </div>
   </div>
+</template>
+
+<template name="image">
+	<img src="{{url}}" class="img-rounded" style="z-index:2; width: 180px;">
 </template>
