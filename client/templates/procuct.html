@@ -1,0 +1,11 @@
+<!--products.html-->
+<template name="product">
+  <div id="{{id}}" class="section {{#if hasBackgroundImage}}overlay{{/if}}"
+    style="{{background}}">
+    <div class="ribbon"><span>Vendido</span></div>
+    <div class="container">
+      <h2 class="section-title">{{category}}</h2>
+      <p class="section-subtitle">{{price}}</p>
+    </div>
+  </div>
+</template>
